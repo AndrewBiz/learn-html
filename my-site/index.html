@@ -2,19 +2,65 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>html lesson 11</title>
-    <style type="text/css">
-      body {
-        color: blueviolet;
-      }
-    </style>
+    <title>
+      learn web.dev - forms JS <!--
+      https://web.dev/learn/forms/javascript?continue=https%3A%2F%2Fweb.dev%2Flearn%2Fforms%23article-https%3A%2F%2Fweb.dev%2Flearn%2Fforms%2Fjavascript
+      -->
+    </title>
     <link href="style.css" type="text/css" rel="stylesheet" />
+    <link
+      href="https://codepen.io/web-dot-dev/pen/abpoXGZ.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://codepen.io/web-dot-dev/pen/gOgYqvz.css"
+      rel="stylesheet"
+    />
   </head>
+
   <body>
-    <script defer async>
-      console.log("Hello Andrew");
-    </script>
-    <!-- <p>Text goes here</p> -->
-    <!-- <img src="image.png" alt="image goes here" /> -->
+    <main>
+      <div class="wrapper">
+        <form>
+          <div>
+            <fieldset>
+              <legend>What is your favorite web technology?</legend>
+              <input
+                type="radio"
+                name="webfeature"
+                value="html"
+                id="html"
+                class="radioField"
+                data-controls="html-additional"
+              />
+              <label for="html">HTML</label>
+              <div class="additional" id="html-additional">
+                <label for="html-element"
+                  >What is your favorite HTML element?</label
+                >
+                <input type="text" id="html-element" name="html-element" />
+              </div>
+              <input
+                type="radio"
+                name="webfeature"
+                value="css"
+                id="css"
+                class="radioField"
+                data-controls="css-additional"
+              />
+              <label for="css">CSS</label>
+              <div class="additional" id="css-additional">
+                <label for="css-property"
+                  >What is your favorite CSS property?</label
+                >
+                <input type="text" id="css-property" name="css-property" />
+              </div>
+            </fieldset>
+          </div>
+          <button>Save</button>
+        </form>
+      </div>
+    </main>
+    <script defer async src="script.js"></script>
   </body>
 </html>

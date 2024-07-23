@@ -1,4 +1,7 @@
-body {
-  /* background-image: url("image.png"); */
-  background-color: bisque;
+button {
+  margin-top: 1rem;
+}
+
+input {
+  margin-bottom: 1rem;
 }
